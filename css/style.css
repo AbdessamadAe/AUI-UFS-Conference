@@ -324,7 +324,7 @@ button:hover {
 
 .bg-title {
   background: url(../images/background/page-title-bg.jpg) no-repeat;
-  background-size: cover;
+  background-size: auto;
   background-position: center center;
 }
 
@@ -537,7 +537,7 @@ select.form-control:not([size]):not([multiple]) {
 
 .btn-main-md:hover {
   color: #fff;
-  background: #e65c0000;
+  background: #198042;
 }
 
 .btn-main-md:focus {
@@ -587,7 +587,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .btn-white-md:hover {
-  background: #1A563200;
+  background: #198042;
   color: #fff;
 }
 
@@ -667,7 +667,7 @@ select.form-control:not([size]):not([multiple]) {
   padding-bottom: 1.2rem;
   font-size: 1.06rem;
   font-family: "Montserrat", sans-serif;
-}
+  }
 
 @media (max-width: 1352px) {
   .main-nav .navbar-nav .nav-item .nav-link {
@@ -3836,25 +3836,34 @@ ul.pagination .active a {
 }
 
 .details {
-  line-height: 2;
+  line-height: 2.5;
   margin-top: 50px;
   color: #000000;
   display: inline;
   font-weight: 400;
 }
 
+.details div {
+  font-weight: 550;
+}
+
 .expandable-list .sub-list {
   display: none;
+  position: relative;
 }
 
 .expandable-list .list-header {
   cursor: pointer;
   margin-top: 12px;
+  position: relative;
 }
 
 .expandable-list .list-header::after {
   content: "";
-  float: left;
+  position: absolute;
+  left: 295px; /* Adjust the positioning as needed */
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .expandable-list .list-header.active::after {

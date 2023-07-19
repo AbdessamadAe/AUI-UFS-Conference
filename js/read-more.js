@@ -1,28 +1,19 @@
-function showMore() {
-    var moreText = document.getElementById("more");
-    var buttonText = document.getElementById("read-more-btn");
-  
-    if (moreText.style.display === "none") {
-      moreText.style.display = "block";
-      buttonText.innerHTML = "Read Less";
-    } else {
-      moreText.style.display = "none";
-      buttonText.innerHTML = "Read More";
-    }
-  }
-  
-  var readMoreButton = document.getElementById("read-more-btn");
-  readMoreButton.addEventListener("click", showMore);
-
-  document.addEventListener("DOMContentLoaded", function() {
-    var headers = document.querySelectorAll(".expandable-list .list-header");
-    
-    headers.forEach(function(header) {
-      header.addEventListener("click", function() {
-        this.classList.toggle("active");
-        var subList = this.nextElementSibling;
-        subList.style.display = subList.style.display === "none" ? "block" : "none";
-      });
+  $(document).ready(function() {
+    $("#read-more-btn").click(function() {
+      var elem = $("#read-more-btn").text();
+      if (elem == "Read More") {
+        //Stuff to do when btn is in the read more state
+        $("#read-more-btn").text("Read Less");
+        $("#more").slideDown();
+      } else {
+        //Stuff to do when btn is in the read less state
+        $("#read-more-btn").text("Read More");
+        $("#more").slideUp();
+      }
     });
   });
-  
+
+  function toggleList(element) {
+    const subList = element.nextElementSibling;
+    subList.style.display = subList.style.display === 'none' ? 'block' : 'none';
+  }  
