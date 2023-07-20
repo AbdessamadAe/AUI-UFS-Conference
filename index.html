@@ -49,9 +49,12 @@
 		<div class="container-fluid p-0">
 			<!-- logo -->
 			<a class="navbar-brand" href="index.html">
-				<img src="https://www.aaicu.org/wp-content/uploads/2016/02/AUI-Logo.png" width="100" height="50"
+				<img class="Desktop-img" src="https://www.aaicu.org/wp-content/uploads/2016/02/AUI-Logo.png" width="100" height="50"
+					alt="logo">
+				<img class="mobile-img" src="images/MergedLogos.png" width="100" height="50"
 					alt="logo">
 			</a>
+
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
 				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="fa fa-bars"></span>
@@ -162,7 +165,7 @@
 								to invite professionals and academic researchers in the field of teaching second
 								languages to participate in an international conference scheduled to be held on May
 								23-25, 2024 under the title "Second Language Teaching and Learning in the 21<span
-								style="vertical-align:super; font-size: 0.8rem; ">st</span>  Century".</p>
+									style="vertical-align:super; font-size: 0.8rem; ">st</span> Century".</p>
 						</div>
 						<div class="description-two">
 							<p>The purpose of this conference is to serve as a platform to showcase the latest
@@ -236,7 +239,8 @@
 								</ul>
 							</li>
 							<li>
-								<p style="font-weight: 500;">Critical Thinking and Problem-Solving in Language Learning:</p>
+								<p style="font-weight: 500;">Critical Thinking and Problem-Solving in Language Learning:
+								</p>
 								<ul>
 									<li>Implementing inquiry-based learning in language classrooms</li>
 									<li>Developing critical thinking skills through language instruction</li>
@@ -497,7 +501,9 @@
 			<div class="row">
 				<div class="col-md-6 align-self-center">
 					<div class="copyright-text">
-						<p> &copy; 2024 <a href="index.html">AUI</a></p>
+						<p> &copy; <span id="copyright">
+								<script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+							</span> <a href="http://www.aui.ma/en/">AUI</a></p>
 					</div>
 				</div>
 				<div class="col-md-6">
