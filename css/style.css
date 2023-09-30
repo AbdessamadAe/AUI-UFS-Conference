@@ -586,7 +586,22 @@ select.form-control:not([size]):not([multiple]) {
   border-radius: 8px;
 }
 
+
+.btn-white-md-ar {
+  background: #fff;
+  color: #222222;
+  padding: 12px 35px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight:bold;
+}
+
 .btn-white-md:hover {
+  background: #198042;
+  color: #fff;
+}
+
+.btn-white-md-ar:hover {
   background: #198042;
   color: #fff;
 }
@@ -616,6 +631,7 @@ select.form-control:not([size]):not([multiple]) {
 .main-nav .navbar-brand .Desktop-img {
   position: relative;
 }
+
 .main-nav .navbar-brand .mobile-img {
   display: none;
 }
@@ -624,14 +640,16 @@ select.form-control:not([size]):not([multiple]) {
   .main-nav .navbar-brand {
     padding: 20px 30px;
   }
+
   .main-nav .navbar-brand .Desktop-img {
     display: none;
   }
+
   .main-nav .navbar-brand .mobile-img {
     display: block;
-    height: auto; 
+    height: 28.9px;
     margin: 0;
-    width: 140px;
+    width: 130px;
   }
 }
 
@@ -643,8 +661,10 @@ select.form-control:not([size]):not([multiple]) {
 
 
 .main-nav .navbar-brand2 {
-  padding: 35px 40px 35px 50px;
+  padding: 35px 0px 35px 0px ;
   border-left: 1px solid #e5e5e5;
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 1200px) {
@@ -683,7 +703,7 @@ select.form-control:not([size]):not([multiple]) {
   padding-bottom: 1.2rem;
   font-size: 1.06rem;
   font-family: "Montserrat", sans-serif;
-  }
+}
 
 @media (max-width: 1352px) {
   .main-nav .navbar-nav .nav-item .nav-link {
@@ -1324,6 +1344,10 @@ select.form-control:not([size]):not([multiple]) {
   margin-bottom: 50px;
 }
 
+.about .intro-title span {
+  font-size: 47px;
+}
+
 .about .intro-title div h1 {
   background: -webkit-linear-gradient(#0a9e45, #1A5632);
   -webkit-background-clip: text;
@@ -1361,8 +1385,13 @@ select.form-control:not([size]):not([multiple]) {
     margin: auto;
     font-size: 18px;
   }
-  .about h1{
+
+  .about h1 {
     font-size: 1.5rem;
+  }
+
+  .about .intro-title span {
+    font-size: 26px;
   }
 }
 
@@ -2000,8 +2029,12 @@ select.form-control:not([size]):not([multiple]) {
 
 @media (max-width: 575px) {
   .ticket-feature .block .timer .syotimer-cell {
+    margin: 0 auto 20px;
+    text-align: center;
+  }
+
+  .ticket-feature .block .timer .syotimer-cell:not(:last-child) {
     margin-right: 10px;
-    margin-bottom: 20px;
   }
 }
 
@@ -2040,6 +2073,7 @@ select.form-control:not([size]):not([multiple]) {
   color: #fff;
   font-family: "Montserrat", sans-serif;
 }
+
 
 .ticket-feature .block-2 {
   position: relative;
@@ -2190,6 +2224,7 @@ select.form-control:not([size]):not([multiple]) {
 
 .pricing .pricing-item {
   border: 1px solid #e5e5e5;
+  border-radius: 8px;
 }
 
 @media (max-width: 991px) {
@@ -2202,6 +2237,7 @@ select.form-control:not([size]):not([multiple]) {
   padding: 20px 40px 30px 40px;
   background: #fafafa;
   border-bottom: 1px solid #e5e5e5;
+  border-radius: 8px 8px 0px 0px;
 }
 
 .pricing .pricing-item .pricing-heading .title h6 {
@@ -2216,8 +2252,8 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .pricing .pricing-item .pricing-heading .price h2 {
-  font-size: 3.625rem;
-  font-weight: 400;
+  color: #000000;
+  font-size: 1.625rem;
   margin-bottom: 0px;
 }
 
@@ -2274,7 +2310,7 @@ select.form-control:not([size]):not([multiple]) {
 
 .pricing .pricing-item.featured .pricing-heading .price h2 {
   color: #fff;
-  font-size: 3.625rem;
+  font-size: 1.625rem;
   margin-bottom: 0px;
 }
 
@@ -3866,6 +3902,31 @@ ul.pagination .active a {
   font-weight: 550;
 }
 
+.arabic-details {
+  text-align: right;
+  line-height: 2.5;
+  margin-top: 50px;
+  color: #000000;
+  display:contents;
+  font-weight: 500;
+  word-spacing: 0.1rem;
+  font-size: 17px;
+  
+}
+
+.arabic-details h6 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.arabic-details div {
+  font-weight: 550;
+}
+
+.arabic-details p {
+  margin-bottom: 10px;
+}
+
 .expandable-list .sub-list {
   display: none;
   position: relative;
@@ -3880,7 +3941,7 @@ ul.pagination .active a {
 .expandable-list .list-header::after {
   content: "";
   position: absolute;
-  left: 295px; /* Adjust the positioning as needed */
+  left: 295px;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -3889,4 +3950,95 @@ ul.pagination .active a {
   content: "";
 }
 
-/*# sourceMappingURL=style.css.map */
+
+/* Prevent contact button text from wrapping */
+
+.btn-responsive-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  font-size: 16px;
+}
+
+.arabic-text{
+  text-align: right;
+}
+
+
+/*Arabic Dates Tabel*/
+.tg {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 12px auto;
+  color: #000000;
+  margin-bottom: 30px;
+  margin-top: 40px;
+
+}
+
+.tg td {
+  border-style: solid;
+  border-width: 0px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  overflow: hidden;
+  padding: 12px 14px;
+  word-break: normal;
+}
+
+.tg th {
+  border-style: solid;
+  border-width: 2px;
+  font-size: 16px;
+  font-weight: bold;
+  overflow: hidden;
+  padding: 14px 5px;
+  word-break: normal;
+}
+
+.tg .tg-xtkx {
+  border-style: solid;
+  border-width: 2px;
+  background-color: #d0e1cc;
+  border-color: inherit;
+  text-align: center;
+  vertical-align: middle;
+  padding: 4px;
+}
+
+.tg .tg-fsme {
+  border-style: solid;
+  border-width: 2px;
+  background-color: #efefef;
+  border-color: inherit;
+  text-align: center;
+  vertical-align: middle
+}
+
+.tg .tg-y698 {
+  border-style: solid;
+  border-width: 2px;
+  background-color: #efefef;
+  border-color: inherit;
+  text-align: center;
+  vertical-align: top
+}
+
+@media screen and (max-width: 767px) {
+  .tg {
+    width: auto !important;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .tg col {
+    width: auto !important;
+  }
+
+  .tg-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: auto 0px;
+  }
+}	
