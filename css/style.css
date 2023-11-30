@@ -697,6 +697,7 @@ select.form-control:not([size]):not([multiple]) {
   position: relative;
   text-align: center;
   color: #222222;
+  font-weight: 600;
   padding-left: 5px;
   padding-right: 17px;
   padding-top: 1.2rem;
