@@ -323,6 +323,12 @@ button:hover {
 }
 
 .bg-title {
+  background: url(https://aui.ma/hubfs/Simple-bg.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.bg-title-speaker {
   background: url(../images/background/page-title-bg.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
@@ -4043,3 +4049,18 @@ ul.pagination .active a {
     margin: auto 0px;
   }
 }	
+
+.btn.disabled, .btn:disabled {
+  pointer-events: none;
+  color: #ccc;
+  background-color: #f7f7f7;
+  border-color: #ddd;
+}
+
+.button-m {
+  margin-bottom: 100px;
+}
+
+.top-m {
+  margin-top: 100px;
+}
